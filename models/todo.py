@@ -35,7 +35,7 @@ class Todo(db.Model):
         # Look at the number of days difference. If there is 1 day or more then show the time unil due in days
         days = diff.days
         if days > 0:
-            return f"{days} Day{("" if days == 1 else "s")}{past_tense_string}"
+            return f'{days} Day{("" if days == 1 else "s")}{past_tense_string}'
         
         # This logic looks at the hours and minutes and reports back
         total_seconds = diff.seconds

@@ -1,0 +1,11 @@
+services:
+  web-app:
+    build: .
+    volumes:
+      - sqlite-data:/app
+    container_name: web-app
+    ports:
+      - "3000:3000"
+
+volumes:
+  sqlite-data:
