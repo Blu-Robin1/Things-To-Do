@@ -1,6 +1,6 @@
 services:
   web-app:
-    build: .
+    image: blurobin/things-to-do:latest
     volumes:
       - sqlite-data:/app
     container_name: web-app
